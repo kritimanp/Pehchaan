@@ -1,0 +1,61 @@
+description: Ultralytics best model trained on data.yaml
+author: Ultralytics
+date: '2025-10-25T13:52:30.775074'
+version: 8.3.221
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Mehsana
+  1: Pulikulam
+  2: Red_Dane
+  3: Sahiwal
+  4: Surti
+  5: Tharparkar
+  6: Toda
+  7: Umblachery
+  8: alambadi
+  9: amritmahal
+  10: ayrshire
+  11: banni
+  12: bargur
+  13: bhadawari
+  14: brown_swiss
+  15: dangi
+  16: deoni
+  17: gir
+  18: guernsey
+  19: hallikar
+  20: hariana
+  21: holstein_Friesian
+  22: jaffrabadi
+  23: jersey
+  24: kangayam
+  25: kankrej
+  26: kasargod
+  27: kenkatha
+  28: kherigarh
+  29: khillari
+  30: krishna_valley
+  31: malnad_gidda
+  32: murrah
+  33: nagori
+  34: nagpuri
+  35: nili_ravi
+  36: nimari
+  37: ongole
+  38: pandharpuri
+  39: rathi
+  40: red_sindhi
+  41: vechur
+args:
+  batch: 1
+  keras: false
+  int8: false
+  nms: false
+channels: 3
