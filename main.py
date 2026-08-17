@@ -2,9 +2,11 @@
 from fastapi import FastAPI, File, UploadFile
 from predict import predict_breed  # Imports your prediction function
 import uvicorn
-
+import os
 app = FastAPI(title="Pehchaan Breed Detection API")
 
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 @app.get("/")
 async def root():
     """A simple root endpoint to check if the API is running."""
@@ -26,4 +28,4 @@ async def create_prediction(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     # This line allows you to run the app by just running `python main.py`
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))

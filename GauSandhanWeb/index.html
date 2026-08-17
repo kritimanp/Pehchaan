@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pehchaan Breed Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🐄 Pehchaan Breed Detector</h1>
+    <p>Upload an image or use your webcam to identify the cattle breed.</p>
+
+    <div class="container" id="uploadContainer">
+        <h3>Upload an Image</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="predictButton">Detect from File</button>
+    </div>
+
+    <div class="container" id="webcamContainer">
+        <h3>Use Webcam</h3>
+        <button id="webcamButton">Start Webcam</button>
+        <video id="videoFeed" autoplay playsinline class="hidden"></video>
+        <button id="captureButton" class="hidden">Capture Photo</button>
+    </div>
+
+    <div class="container hidden" id="resultsContainer">
+        <h3>Results</h3>
+        <div id="loading" class="hidden">Loading...</div>
+        <pre id="results"></pre>
+    </div>
+
+    <canvas id="canvas" class="hidden"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
