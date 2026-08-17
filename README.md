@@ -26,10 +26,3 @@ Pehchaan (पहचान) - AI powered web app to identify Indian cow breeds fr
 2. `model.signatures['serving_default']` - inference
 3. `non_max_suppression()` - best box
 4. `unletterbox_box()` - maps back to original image
-
-### Run Locally
-
-**Backend:**
-```bash
-pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
